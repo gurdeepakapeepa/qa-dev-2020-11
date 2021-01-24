@@ -13,6 +13,7 @@
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^7.0.3",
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "babel-eslint": "^10.1.0",

@@ -12,7 +12,7 @@ This will open the application in your default web browser at http://localhost:3
 
 ### Defaut List on load:
 Purpose: Ensure the application loads with the default item List.
-1. Ensure the 'Items' title is present.
+1. Ensure the `Items` title is present.
 2. Ensure the default list is present. 
 3. Ensure the List items text.
 4. Ensure List items contains a `Remove` button
