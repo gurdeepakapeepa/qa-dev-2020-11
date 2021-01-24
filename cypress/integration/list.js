@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+const item_titles = [ 'Wac, ft. Valeria - “Tortoise”','Kishi Bashi - “The Ballad of Mr Steak”','Lucy Dacus - “Night Shift”','Shamir - “Larry Clark”','Moloko - “Over & Over”','Shugo Tokumaru - “Lita-Ruta”',]
 const valid_item = 'Valid Item Text';
 const short_item = 'Short';
 const long_item = 'Very very long Item Text';
@@ -11,12 +12,15 @@ describe('item list app', function () {
 
   it('default elements', function () {
     cy.findByText('Items').should('exist')
-    cy.findByText('Wac, ft. Valeria - “Tortoise”').should('exist')
-    cy.findByText('Kishi Bashi - “The Ballad of Mr Steak”').should('exist')
-    cy.findByText('Lucy Dacus - “Night Shift”').should('exist')
-    cy.findByText('Shamir - “Larry Clark”').should('exist')
-    cy.findByText('Moloko - “Over & Over”').should('exist')
-    cy.findByText('Shugo Tokumaru - “Lita-Ruta”').should('exist')
+    // cy.findByText('Wac, ft. Valeria - “Tortoise”').should('exist')
+    // cy.findByText('Kishi Bashi - “The Ballad of Mr Steak”').should('exist')
+    // cy.findByText('Lucy Dacus - “Night Shift”').should('exist')
+    // cy.findByText('Shamir - “Larry Clark”').should('exist')
+    // cy.findByText('Moloko - “Over & Over”').should('exist')
+    // cy.findByText('Shugo Tokumaru - “Lita-Ruta”').should('exist')
+    cy.get('.Item').each((item,index) => {
+      cy.wrap(item).should('contain.text',item_titles[index])
+    })
     cy.findByText('Title:').should('exist')
     cy.findByText('(between 10 and 20 characters)').should('exist')
     cy.get('input#title').should('exist')

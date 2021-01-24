@@ -1,6 +1,12 @@
 ## Setup and Installation
 Running `yarn install` from the root will install Cypress locally as a dev dependency for project.
 
+## Run Automated Tests
+Run `npx cypress open`(npx is included with  `npm > v5.2`) from the root to launch the Cypress Test Runner.
+Select `list.js` from the test runner to run the test.
+For Full Documention of cypress  https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements
+For test libarary Documention https://github.com/testing-library/cypress-testing-library
+
 ## Test Document
 
 ### Note:
@@ -13,7 +19,7 @@ This will open the application in your default web browser at http://localhost:3
 ### Defaut List on load:
 Purpose: Ensure the application loads with the default item List.
 1. Ensure the `Items` title is present.
-2. Ensure the default list is present. 
+2. Ensure the default list is present.
 3. Ensure the List items text.
 4. Ensure List items contains a `Remove` button
 5. Ensure the Label `Title` is present.
